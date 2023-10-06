@@ -2,14 +2,14 @@
 
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 
-import { useActiveSectionCtx } from "@/contexts/ActiveSectionContext";
-import useSectionInView from "@/hooks/useSectionInView";
-import { motion } from "framer-motion";
-import Link from "next/link";
+import Avatar from "./Avatar";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
-import Avatar from "./Avatar";
 import IntroText from "./IntroText";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { useActiveSectionCtx } from "@/contexts/ActiveSectionContext";
+import useSectionInView from "@/hooks/useSectionInView";
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5);
@@ -55,7 +55,7 @@ export default function Intro() {
 
                 <a
                     className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/ujjwal-garg-3a5639243"
                     target="_blank"
                 >
                     <BsLinkedin />
@@ -63,7 +63,7 @@ export default function Intro() {
 
                 <a
                     className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-                    href="https://github.com"
+                    href="https://github.com/ujjwalgarg100204"
                     target="_blank"
                 >
                     <FaGithubSquare />
