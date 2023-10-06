@@ -1,11 +1,11 @@
 import "./globals.css";
 
-import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { Inter } from "next/font/google";
-import ThemeContextProvider from "@/contexts/ThemeContext";
 import ThemeSwitch from "@/components/ui/ThemeSwitch";
+import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
+import ThemeContextProvider from "@/contexts/ThemeContext";
+import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
     title: "Ujjwal | Personal Portfolio",
     description:
-        "Ricardo is a full-stack developer with 8 years of experience.",
+        "Ujjwal is a full-stack developer with 1½ years of experience. His focus is React (Next.js) & backend with Node",
 };
 
 export default function RootLayout({
