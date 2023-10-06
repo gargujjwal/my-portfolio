@@ -29,7 +29,8 @@ export const metadata: Metadata = {
         "Next.js",
         "vercel",
         "Portfolio",
-        "develop",
+        "developer",
+        "Ujjwal Garg Portfolio",
     ],
     authors: [{ name: "Ujjwal Garg" }],
     colorScheme: "dark light",
@@ -63,6 +64,9 @@ export const metadata: Metadata = {
             url: "/images/seo.png",
             alt: TITLE,
         },
+    },
+    verification: {
+        google: "INGBoGtBTc4-bplE45Egc4UJbModhDeMq6wS7JFCXPM",
     },
 };
 
