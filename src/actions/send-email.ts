@@ -2,13 +2,14 @@
 
 import { ContactFormSchema } from "@/components/sections/Contact/zod-contact-form";
 import ContactFormEmail from "@/email/ContactFormEmail";
+import { env } from "@/env";
 import { APIResponse } from "@/lib/types";
 import { getErrorMessage } from "@/lib/utils";
 import React from "react";
 import { Resend } from "resend";
 import { CreateEmailResponse } from "resend/build/src/emails/interfaces";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(env.RESEND_API_KEY);
 
 export const sendEmail = async (
     formData: unknown,
