@@ -1,10 +1,10 @@
-import ExpenseTrackerImg from "@/../public/images/projects/expense-tracker.png";
-import ForklifyImg from "@/../public/images/projects/forklify.png";
-import RockPaperScissorImg from "@/../public/images/projects/rock-paper-scissor.png";
-import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import ExpenseTrackerImg from "@/../public/images/projects/expense-tracker.png";
 import { FaReact } from "react-icons/fa";
+import ForklifyImg from "@/../public/images/projects/forklify.png";
 import { LuGraduationCap } from "react-icons/lu";
+import React from "react";
+import RockPaperScissorImg from "@/../public/images/projects/rock-paper-scissor.png";
 
 export const links = [
     {
@@ -35,20 +35,12 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated School",
-        location: "Delhi, India",
+        title: "Full-Stack Developer",
+        location: "Remote",
         description:
-            "I completed my schooling at Flora Dale School in Delhi. In my 12th grade, I achieved an impressive 94.4%, building upon the strong foundation I laid in my 10th grade where I secured 93.8%.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2021",
-    },
-    {
-        title: "Bachelor's Degree",
-        location: "VIT, Vellore, Tamil Nadu, India",
-        description:
-            "I will complete my Bachelor's degree in Information Technology in 2025. I actively participate in various technical clubs and take part in numerous hackathons. This experience greatly enriches my knowledge and passion for IT.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2021 - present",
+            "Hired for the first time to digitize all academics of Greenfield School in Tamil Nadu. This ongoing initiative aims to streamline and modernize various educational processes for enhanced efficiency and accessibility",
+        icon: React.createElement(FaReact),
+        date: "2023 - present",
     },
     {
         title: "Backend Developer Intern",
@@ -59,12 +51,20 @@ export const experiencesData = [
         date: "2023 - Present",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Remote",
+        title: "Bachelor's Degree",
+        location: "VIT, Vellore, Tamil Nadu, India",
         description:
-            "Hired for the first time to digitize all academics of Greenfield School in Tamil Nadu. This ongoing initiative aims to streamline and modernize various educational processes for enhanced efficiency and accessibility",
-        icon: React.createElement(FaReact),
-        date: "2023 - present",
+            "I will complete my Bachelor's degree in Information Technology in 2025. I actively participate in various technical clubs and take part in numerous hackathons. This experience greatly enriches my knowledge and passion for IT.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2021 - present",
+    },
+    {
+        title: "Graduated School",
+        location: "Delhi, India",
+        description:
+            "I completed my schooling at Flora Dale School in Delhi. In my 12th grade, I achieved an impressive 94.4%, building upon the strong foundation I laid in my 10th grade where I secured 93.8%.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2021",
     },
 ] as const;
 
