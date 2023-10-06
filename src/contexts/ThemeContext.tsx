@@ -42,9 +42,12 @@ export default function ThemeContextProvider({
         switch (true) {
             case localStorageTheme !== null:
                 setTheme(localStorageTheme as Theme);
+                if (localStorageTheme === "dark")
+                    document.documentElement.classList.add("dark");
                 break;
             case window.matchMedia("(prefers-color-scheme: dark)").matches:
                 setTheme("dark");
+                document.documentElement.classList.add("dark");
         }
     }, [getThemeLocal]);
 
