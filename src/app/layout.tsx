@@ -6,15 +6,64 @@ import ThemeSwitch from "@/components/ui/ThemeSwitch";
 import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
 import ThemeContextProvider from "@/contexts/ThemeContext";
 import { Analytics } from "@vercel/analytics/react";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-    title: "Ujjwal | Personal Portfolio",
-    description:
-        "Ujjwal is a full-stack developer with 1½ years of experience. His focus is React (Next.js) & backend with Node",
+const TITLE = "Ujjwal | Personal Portfolio" as const;
+const DESCRIPTION =
+    "Ujjwal is a full-stack developer with 1½ years of experience. His focus is React (Next.js) & backend with Node" as const;
+
+export const metadata: Metadata = {
+    title: TITLE,
+    description: DESCRIPTION,
+    generator: "Next.js",
+    applicationName: TITLE,
+    referrer: "origin-when-cross-origin",
+    keywords: [
+        "Ujjwal Garg",
+        "Ujjwal",
+        "Garg",
+        "Next.js",
+        "vercel",
+        "Portfolio",
+        "develop",
+    ],
+    authors: [{ name: "Ujjwal Garg" }],
+    colorScheme: "dark light",
+    creator: "Ujjwal Garg",
+    category: "Portfolio",
+    formatDetection: {
+        email: true,
+        address: false,
+        telephone: false,
+    },
+    openGraph: {
+        title: TITLE,
+        description: DESCRIPTION,
+        url: "https://ujjwal-new-portfolio.vercel.app/",
+        siteName: TITLE,
+        images: [
+            {
+                url: "https://ujjwal-new-portfolio.vercel.app/about",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+
+    twitter: {
+        card: "summary_large_image",
+        title: TITLE,
+        description: DESCRIPTION,
+        creator: "@UjwalGarg100204",
+        images: {
+            url: "/images/seo.png",
+            alt: TITLE,
+        },
+    },
 };
 
 export default function RootLayout({
@@ -24,6 +73,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className="!scroll-smooth">
+            <meta
+                property="twitter:image"
+                content="Twitter link preview image URL"
+            ></meta>
             <body
                 className={`${inter.className} relative bg-gray-50 pt-28 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 sm:pt-36`}
             >
