@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import ThemeSwitch from "@/components/ui/ThemeSwitch";
 import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
 import ThemeContextProvider from "@/contexts/ThemeContext";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
@@ -39,6 +40,7 @@ export default function RootLayout({
                         <ThemeSwitch />
                     </ActiveSectionContextProvider>
                 </ThemeContextProvider>
+                <Analytics />
             </body>
         </html>
     );
