@@ -1,10 +1,10 @@
-import { CgWorkAlt } from "react-icons/cg";
 import ExpenseTrackerImg from "@/../public/images/projects/expense-tracker.png";
-import { FaReact } from "react-icons/fa";
 import ForklifyImg from "@/../public/images/projects/forklify.png";
-import { LuGraduationCap } from "react-icons/lu";
-import React from "react";
 import RockPaperScissorImg from "@/../public/images/projects/rock-paper-scissor.png";
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
     {
@@ -75,6 +75,7 @@ export const projectsData = [
             "A unique recipe-sharing platform for culinary creators to showcase their dishes and discover a variety of recipes from fellow food enthusiasts.",
         tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "MUI"],
         imageUrl: ForklifyImg,
+        url: "https://forklify-six.vercel.app/",
     },
     {
         title: "Expense Tracker App",
@@ -82,6 +83,7 @@ export const projectsData = [
             "Effortlessly manages your expenses, track your spending, and stay on top of your budget with ease with this mobile app.",
         tags: ["React Native", "Redux", "Tailwind", "Firebase"],
         imageUrl: ExpenseTrackerImg,
+        url: "",
     },
     {
         title: "🪨 📃 ✂️ Game",
@@ -89,6 +91,7 @@ export const projectsData = [
             "A simple game of rock-paper-scissors built with React and Tailwind.",
         tags: ["React", "Vite", "Typescript", "Tailwind"],
         imageUrl: RockPaperScissorImg,
+        url: "https://ujjwalgarg100204.github.io/Frontend-Mentors-rock-paper-scissors-solution/",
     },
 ] as const;
 
