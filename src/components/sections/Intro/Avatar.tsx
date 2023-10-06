@@ -1,7 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
+import MyAvatar from "@/../public/headshot.png";
+import { motion } from "framer-motion";
 
 const Avatar = () => {
     return (
@@ -15,13 +16,11 @@ const Avatar = () => {
                 }}
             >
                 <Image
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+                    src={MyAvatar}
                     alt="Ricardo portrait"
-                    width="192"
-                    height="192"
                     quality="95"
                     priority={true}
-                    className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+                    className="h-32 w-32 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
                 />
             </motion.div>
 

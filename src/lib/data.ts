@@ -1,10 +1,10 @@
-import CorpcommentImg from "@/../public/corpcomment.png";
-import RmtdevImg from "@/../public/rmtdev.png";
-import WordanalyticsImg from "@/../public/wordanalytics.png";
-import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import ExpenseTrackerImg from "@/../public/images/projects/expense-tracker.png";
 import { FaReact } from "react-icons/fa";
+import ForklifyImg from "@/../public/images/projects/forklify.png";
 import { LuGraduationCap } from "react-icons/lu";
+import React from "react";
+import RockPaperScissorImg from "@/../public/images/projects/rock-paper-scissor.png";
 
 export const links = [
     {
@@ -35,73 +35,81 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "Graduated School",
+        location: "Delhi, India",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            "I completed my schooling at Flora Dale School in Delhi. In my 12th grade, I achieved an impressive 94.4%, building upon the strong foundation I laid in my 10th grade where I secured 93.8%.",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
+        date: "2021",
     },
     {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
+        title: "Bachelor's Degree",
+        location: "VIT, Vellore, Tamil Nadu, India",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "I will complete my Bachelor's degree in Information Technology in 2025. I actively participate in various technical clubs and take part in numerous hackathons. This experience greatly enriches my knowledge and passion for IT.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2021 - present",
+    },
+    {
+        title: "Backend Developer Intern",
+        location: "Remote",
+        description:
+            "Collaborated to develope backend with Node.JS and Firebase, integrated OAuth with JWT for secure user authentication. Used Puppeteer.JS for web scraping, managing data for 500+ lawyers. Also, dockerized and optimized SEO for top 10 search results",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "2023 - Present",
     },
     {
         title: "Full-Stack Developer",
-        location: "Houston, TX",
+        location: "Remote",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+            "Hired for the first time to digitize all academics of Greenfield School in Tamil Nadu. This ongoing initiative aims to streamline and modernize various educational processes for enhanced efficiency and accessibility",
         icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "2023 - present",
     },
 ] as const;
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Forklify",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: CorpcommentImg,
+            "A unique recipe-sharing platform for culinary creators to showcase their dishes and discover a variety of recipes from fellow food enthusiasts.",
+        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "MUI"],
+        imageUrl: ForklifyImg,
     },
     {
-        title: "rmtDev",
+        title: "Expense Tracker App",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: RmtdevImg,
+            "Effortlessly manages your expenses, track your spending, and stay on top of your budget with ease with this mobile app.",
+        tags: ["React Native", "Redux", "Tailwind", "Firebase"],
+        imageUrl: ExpenseTrackerImg,
     },
     {
-        title: "Word Analytics",
+        title: "🪨 📃 ✂️ Game",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: WordanalyticsImg,
+            "A simple game of rock-paper-scissors built with React and Tailwind.",
+        tags: ["React", "Vite", "Typescript", "Tailwind"],
+        imageUrl: RockPaperScissorImg,
     },
 ] as const;
 
 export const skillsData = [
-    "HTML",
-    "CSS",
     "JavaScript",
     "TypeScript",
+    "Python",
+    "Java",
     "React",
+    "React Native",
+    "Redux",
     "Next.js",
+    "HTML",
+    "CSS",
     "Node.js",
     "Git",
     "Tailwind",
     "Prisma",
     "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
     "Express",
     "PostgreSQL",
-    "Python",
-    "Django",
-    "Framer Motion",
+    "Flask",
+    "Post",
 ] as const;

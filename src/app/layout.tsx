@@ -1,17 +1,17 @@
 import "./globals.css";
 
+import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import ThemeSwitch from "@/components/ui/ThemeSwitch";
-import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
-import ThemeContextProvider from "@/contexts/ThemeContext";
 import { Inter } from "next/font/google";
+import ThemeContextProvider from "@/contexts/ThemeContext";
+import ThemeSwitch from "@/components/ui/ThemeSwitch";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Ricardo | Personal Portfolio",
+    title: "Ujjwal | Personal Portfolio",
     description:
         "Ricardo is a full-stack developer with 8 years of experience.",
 };
