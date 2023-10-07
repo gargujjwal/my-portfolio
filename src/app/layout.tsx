@@ -12,7 +12,7 @@ import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const TITLE = "Ujjwal | Personal Portfolio" as const;
+const TITLE = "Ujjwal Garg | Portfolio" as const;
 const DESCRIPTION =
     "Ujjwal is a full-stack developer with 1½ years of experience. His focus is React (Next.js) & backend with Node" as const;
 
