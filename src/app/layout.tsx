@@ -1,13 +1,13 @@
 import "./globals.css";
 
+import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
+import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import ThemeSwitch from "@/components/ui/ThemeSwitch";
-import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
-import ThemeContextProvider from "@/contexts/ThemeContext";
-import { Analytics } from "@vercel/analytics/react";
-import { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Metadata } from "next";
+import ThemeContextProvider from "@/contexts/ThemeContext";
+import ThemeSwitch from "@/components/ui/ThemeSwitch";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     applicationName: TITLE,
     referrer: "origin-when-cross-origin",
     keywords: [
+        "Portfolio",
         "Ujjwal",
         "Garg",
         "Personal",
@@ -32,10 +33,11 @@ export const metadata: Metadata = {
         "Ujjwal Garg Personal",
         "Ujjwal Garg Portfolio",
         "Ujjwal Garg Personal Portfolio",
-        "Next.js",
-        "vercel",
-        "Portfolio",
-        "developer",
+        "VIT",
+        "Ujjwal Garg VIT",
+        "Ujjwal Garg VIT Vellore",
+        "VIT Vellore",
+        "Ujjwal Garg VIT Vellore Portfolio",
     ],
     authors: [{ name: "Ujjwal Garg" }],
     colorScheme: "dark light",
@@ -82,10 +84,6 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className="!scroll-smooth">
-            <meta
-                property="twitter:image"
-                content="Twitter link preview image URL"
-            ></meta>
             <body
                 className={`${inter.className} relative bg-gray-50 pt-28 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 sm:pt-36`}
             >
