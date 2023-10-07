@@ -66,12 +66,12 @@ export default function Contact() {
             </p>
 
             <form
-                className="mt-10 flex flex-col dark:text-black"
+                className="mt-10 flex flex-col"
                 onSubmit={handleSubmit(onSubmit)}
             >
                 <input
                     className={clsx(
-                        "borderBlack h-14 rounded-lg px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100",
+                        "borderBlack h-14 rounded-lg px-4 text-white transition-all dark:bg-white dark:bg-opacity-80 dark:text-black dark:outline-none dark:focus:bg-opacity-100",
                         errors.senderEmail &&
                             "bg-red-200 text-red-500 placeholder:text-red-500",
                     )}
@@ -80,7 +80,7 @@ export default function Contact() {
                 />
                 <textarea
                     className={clsx(
-                        "borderBlack my-3 h-52 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100",
+                        "borderBlack my-3 h-52 rounded-lg p-4 text-white transition-all dark:bg-white dark:bg-opacity-80 dark:text-black dark:outline-none dark:focus:bg-opacity-100",
                         errors.message &&
                             "bg-red-200 text-red-500 placeholder:text-red-500",
                     )}
