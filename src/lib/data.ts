@@ -91,7 +91,7 @@ export const projectsData = [
             "A simple game of rock-paper-scissors built with React and Tailwind.",
         tags: ["React", "Vite", "Typescript", "Tailwind"],
         imageUrl: RockPaperScissorImg,
-        url: "https://ujjwalgarg100204.github.io/Frontend-Mentors-rock-paper-scissors-solution/",
+        url: "https://gargujjwal.github.io/Frontend-Mentors-rock-paper-scissors-solution/",
     },
 ] as const;
 
