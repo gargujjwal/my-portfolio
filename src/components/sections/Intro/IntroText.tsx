@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 
 const IntroText = () => {
@@ -10,14 +9,15 @@ const IntroText = () => {
             animate={{ opacity: 1, y: 0 }}
         >
             <span className="font-bold">Hello, I&apos;m Ujjwal.</span> I&apos;m
-            a <span className="font-bold">full-stack developer</span> with{" "}
-            <span className="font-bold">1½ years</span> of experience. I enjoy
-            building <span className="italic">websites & apps</span>. My focus
-            is{" "}
+            a <span className="font-bold">Java Software Engineer</span> with a
+            focus on <span className="font-bold">full-stack development</span>.
+            I specialize in building{" "}
+            <span className="italic">enterprise applications</span> using{" "}
             <span className="underline">
-                React (Next.js) & backend with Node
+                Spring Boot, React, and microservices architecture
             </span>
-            .
+            . Proficient in major frameworks like{" "}
+            <span className="font-bold">Next.js, Angular, and Node.js</span>.
         </motion.h1>
     );
 };

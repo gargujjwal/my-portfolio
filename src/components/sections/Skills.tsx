@@ -1,9 +1,8 @@
 "use client";
-
-import SectionHeading from "../ui/SectionHeading";
-import { motion } from "framer-motion";
-import { skillsData } from "@/lib/data";
 import useSectionInView from "@/hooks/useSectionInView";
+import { skillsData } from "@/lib/data";
+import { motion } from "framer-motion";
+import SectionHeading from "../ui/SectionHeading";
 
 const fadeInAnimationVariants = {
     initial: {
@@ -22,30 +21,42 @@ const fadeInAnimationVariants = {
 export default function Skills() {
     const { ref } = useSectionInView("Skills");
 
+    // Group skills by category for better organization
+
     return (
         <section
             id="skills"
             ref={ref}
             className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
         >
-            <SectionHeading>My skills</SectionHeading>
-            <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-                {skillsData.map((skill, index) => (
-                    <motion.li
-                        className="borderBlack rounded-xl bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
-                        key={index}
-                        variants={fadeInAnimationVariants}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{
-                            once: true,
-                        }}
-                        custom={index}
-                    >
-                        {skill}
-                    </motion.li>
-                ))}
-            </ul>
+            <SectionHeading>Technical Proficiencies</SectionHeading>
+
+            {Object.entries(skillsData).map(
+                ([category, skills], categoryIndex) => (
+                    <div key={categoryIndex} className="mb-8">
+                        <h3 className="mb-3 text-xl font-medium text-gray-800 dark:text-white/80">
+                            {category}
+                        </h3>
+                        <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+                            {skills.map((skill, index) => (
+                                <motion.li
+                                    className="borderBlack rounded-xl bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
+                                    key={index}
+                                    variants={fadeInAnimationVariants}
+                                    initial="initial"
+                                    whileInView="animate"
+                                    viewport={{
+                                        once: true,
+                                    }}
+                                    custom={index + categoryIndex * 10}
+                                >
+                                    {skill}
+                                </motion.li>
+                            ))}
+                        </ul>
+                    </div>
+                ),
+            )}
         </section>
     );
 }
