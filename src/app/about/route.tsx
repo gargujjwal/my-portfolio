@@ -1,4 +1,4 @@
-import { ImageResponse } from "next/server";
+import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
@@ -20,14 +20,11 @@ export async function GET() {
             >
                 <img
                     src="https://ujjwal-new-portfolio.vercel.app/images/seo.png"
-                    alt="something"
+                    alt="seo"
                     style={{ width: "100%", height: "100%" }}
                 />
             </div>
         ),
-        {
-            width: 1920,
-            height: 902,
-        },
+        { width: 1920, height: 902 },
     );
 }

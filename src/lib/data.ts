@@ -1,39 +1,22 @@
-import { CgWorkAlt } from "react-icons/cg";
 import ExpenseTrackerImg from "@/../public/images/projects/expense-tracker.png";
-import { FaReact } from "react-icons/fa";
 import ForklifyImg from "@/../public/images/projects/forklify.png";
-import { LuGraduationCap } from "react-icons/lu";
-import React from "react";
 import RockPaperScissorImg from "@/../public/images/projects/rock-paper-scissor.png";
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
+import { ExperienceData } from "./types";
 
 export const links = [
-    {
-        name: "Home",
-        hash: "#home",
-    },
-    {
-        name: "About",
-        hash: "#about",
-    },
-    {
-        name: "Projects",
-        hash: "#projects",
-    },
-    {
-        name: "Skills",
-        hash: "#skills",
-    },
-    {
-        name: "Experience",
-        hash: "#experience",
-    },
-    {
-        name: "Contact",
-        hash: "#contact",
-    },
+    { name: "Home", hash: "#home" },
+    { name: "About", hash: "#about" },
+    { name: "Projects", hash: "#projects" },
+    { name: "Skills", hash: "#skills" },
+    { name: "Experience", hash: "#experience" },
+    { name: "Contact", hash: "#contact" },
 ] as const;
 
-export const experiencesData = [
+export const experiencesData: ExperienceData[] = [
     {
         title: "Full-Stack Developer",
         location: "Remote",
@@ -66,7 +49,7 @@ export const experiencesData = [
         icon: React.createElement(LuGraduationCap),
         date: "2021",
     },
-] as const;
+];
 
 export const projectsData = [
     {

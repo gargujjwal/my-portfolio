@@ -18,7 +18,7 @@ type ContactFormEmailProps = {
 export default function ContactFormEmail({
     message,
     senderEmail,
-}: ContactFormEmailProps) {
+}: Readonly<ContactFormEmailProps>) {
     return (
         <Html>
             <Head />

@@ -7,11 +7,11 @@ import {
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
+import { useTheme } from "@/contexts/ThemeContext";
+import useSectionInView from "@/hooks/useSectionInView";
+import { experiencesData } from "@/lib/data";
 import React from "react";
 import SectionHeading from "../ui/SectionHeading";
-import { experiencesData } from "@/lib/data";
-import useSectionInView from "@/hooks/useSectionInView";
-import { useTheme } from "@/contexts/ThemeContext";
 
 export default function Experience() {
     const { ref } = useSectionInView("Experience");
@@ -46,6 +46,7 @@ export default function Experience() {
                                         : "0.4rem solid rgba(255, 255, 255, 0.5)",
                             }}
                             date={item.date}
+                            // @ts-ignore not an error just a type issue
                             icon={item.icon}
                             iconStyle={{
                                 background:

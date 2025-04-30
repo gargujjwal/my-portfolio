@@ -1,22 +1,29 @@
 import "./globals.css";
 
-import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
-import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { Inter } from "next/font/google";
-import { Metadata } from "next";
-import ThemeContextProvider from "@/contexts/ThemeContext";
 import ThemeSwitch from "@/components/ui/ThemeSwitch";
+import ActiveSectionContextProvider from "@/contexts/ActiveSectionContext";
+import ThemeContextProvider from "@/contexts/ThemeContext";
+import { Analytics } from "@vercel/analytics/react";
+import { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const TITLE = "Ujjwal Garg | Portfolio" as const;
+const TITLE = "Ujjwal Garg | Portfolio";
 const DESCRIPTION =
-    "Ujjwal is a full-stack developer with 1½ years of experience. His focus is React (Next.js) & backend with Node" as const;
+    "Ujjwal is a full-stack developer with 1½ years of experience. His focus is React (Next.js) & backend with Node";
 
+export const viewport: Viewport = {
+    themeColor: [
+        { media: "(prefers-color-scheme: light)", color: "light" },
+        { media: "(prefers-color-scheme: dark)", color: "dark" },
+    ],
+};
 export const metadata: Metadata = {
+    metadataBase: new URL("https://ujjwal-new-portfolio.vercel.app/"),
     title: TITLE,
     description: DESCRIPTION,
     generator: "Next.js",
@@ -40,7 +47,6 @@ export const metadata: Metadata = {
         "Ujjwal Garg VIT Vellore Portfolio",
     ],
     authors: [{ name: "Ujjwal Garg" }],
-    colorScheme: "dark light",
     creator: "Ujjwal Garg",
     category: "Portfolio",
     formatDetection: {
@@ -53,11 +59,7 @@ export const metadata: Metadata = {
         description: DESCRIPTION,
         url: "https://ujjwal-new-portfolio.vercel.app/",
         siteName: TITLE,
-        images: [
-            {
-                url: "https://ujjwal-new-portfolio.vercel.app/about",
-            },
-        ],
+        images: [{ url: "https://ujjwal-new-portfolio.vercel.app/about" }],
         locale: "en_US",
         type: "website",
     },
@@ -67,21 +69,16 @@ export const metadata: Metadata = {
         title: TITLE,
         description: DESCRIPTION,
         creator: "@UjwalGarg100204",
-        images: {
-            url: "/images/seo.png",
-            alt: TITLE,
-        },
+        images: { url: "/images/seo.png", alt: TITLE },
     },
-    verification: {
-        google: "INGBoGtBTc4-bplE45Egc4UJbModhDeMq6wS7JFCXPM",
-    },
+    verification: { google: "INGBoGtBTc4-bplE45Egc4UJbModhDeMq6wS7JFCXPM" },
 };
 
 export default function RootLayout({
     children,
-}: {
+}: Readonly<{
     children: React.ReactNode;
-}) {
+}>) {
     return (
         <html lang="en" className="!scroll-smooth">
             <body
