@@ -29,7 +29,7 @@ export const sendEmail = async (
     try {
         const res = await resend.emails.send({
             from: "Contact Form From Your Portfolio <onboarding@resend.dev>",
-            to: "gargujjwal04@gmail.com",
+            to: "ujjwalgarg100204@gmail.com",
             subject: "Message from contact form",
             react: ContactFormEmail({
                 message: message,

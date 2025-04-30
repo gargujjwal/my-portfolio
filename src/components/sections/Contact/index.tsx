@@ -39,18 +39,10 @@ export default function Contact() {
             id="contact"
             ref={ref}
             className="mb-20 w-[min(100%,38rem)] text-center sm:mb-28"
-            initial={{
-                opacity: 0,
-            }}
-            whileInView={{
-                opacity: 1,
-            }}
-            transition={{
-                duration: 1,
-            }}
-            viewport={{
-                once: true,
-            }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
         >
             <SectionHeading>Contact me</SectionHeading>
 
@@ -68,7 +60,7 @@ export default function Contact() {
             >
                 <input
                     className={clsx(
-                        "borderBlack h-14 rounded-lg px-4 text-white transition-all dark:bg-white dark:bg-opacity-80 dark:text-black dark:outline-none dark:focus:bg-opacity-100",
+                        "borderBlack h-14 rounded-lg px-4 text-black transition-all dark:bg-white dark:bg-opacity-80 dark:text-black dark:outline-none dark:focus:bg-opacity-100",
                         errors.senderEmail &&
                             "bg-red-200 text-red-500 placeholder:text-red-500",
                     )}
@@ -77,7 +69,7 @@ export default function Contact() {
                 />
                 <textarea
                     className={clsx(
-                        "borderBlack my-3 h-52 rounded-lg p-4 text-white transition-all dark:bg-white dark:bg-opacity-80 dark:text-black dark:outline-none dark:focus:bg-opacity-100",
+                        "borderBlack my-3 h-52 rounded-lg p-4 text-black transition-all dark:bg-white dark:bg-opacity-80 dark:text-black dark:outline-none dark:focus:bg-opacity-100",
                         errors.message &&
                             "bg-red-200 text-red-500 placeholder:text-red-500",
                     )}

@@ -29,7 +29,7 @@ export default function About() {
                     {" "}
                     final year with a CGPA of 8.96/10
                 </span>{" "}
-                , I've developed expertise in
+                , I&apos;ve developed expertise in
                 <span className="font-medium">
                     {" "}
                     Java, Spring Boot, and full-stack development
@@ -61,8 +61,8 @@ export default function About() {
                 <span className="font-bold">
                     Technical Teaching Assistant at Apna College
                 </span>{" "}
-                , where I mentored over 4,000 students. I've developed several
-                significant projects, including a
+                , where I mentored over 4,000 students. I&apos;ve developed
+                several significant projects, including a
                 <span className="font-medium">
                     {" "}
                     cervical cancer prediction system using Spring Boot and ML
