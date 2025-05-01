@@ -12,10 +12,9 @@ import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const TITLE = "Ujjwal Garg | Portfolio";
+const TITLE = "Ujjwal Garg | Java Software Engineer";
 const DESCRIPTION =
-    "Ujjwal is a full-stack developer with 1½ years of experience. His focus is React (Next.js) & backend with Node";
-
+    "Ujjwal Garg is a Java Software Engineer specializing in Spring Boot, microservices architecture, and full-stack development with expertise in building secure, scalable enterprise applications.";
 export const viewport: Viewport = {
     themeColor: [
         { media: "(prefers-color-scheme: light)", color: "light" },
@@ -30,10 +29,28 @@ export const metadata: Metadata = {
     applicationName: TITLE,
     referrer: "origin-when-cross-origin",
     keywords: [
-        "Portfolio",
+        "Java Developer",
+        "Spring Boot",
+        "Software Engineer",
+        "Full-Stack Developer",
+        "Ujjwal Garg",
+        "Enterprise Applications",
+        "Microservices",
+        "Backend Engineer",
+        "Java",
+        "PostgreSQL",
+        "React",
+        "Next.js",
+        "Angular",
+        "VIT",
+        "Vellore Institute of Technology",
+        "AI-Driven Applications",
+        "Machine Learning Engineer",
+        "Docker",
+        "Healthcare Applications",
+        "Education Management Systems",
         "Ujjwal",
         "Garg",
-        "Personal",
         "Ujjwal Garg",
         "Ujjwal Portfolio",
         "Garg Portfolio",
@@ -63,7 +80,6 @@ export const metadata: Metadata = {
         locale: "en_US",
         type: "website",
     },
-
     twitter: {
         card: "summary_large_image",
         title: TITLE,
@@ -76,9 +92,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
     children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" className="!scroll-smooth">
             <body
