@@ -31,32 +31,30 @@ export default function Skills() {
         >
             <SectionHeading>Technical Proficiencies</SectionHeading>
 
-            {Object.entries(skillsData).map(
-                ([category, skills], categoryIndex) => (
-                    <div key={categoryIndex} className="mb-8">
-                        <h3 className="mb-3 text-xl font-medium text-gray-800 dark:text-white/80">
-                            {category}
-                        </h3>
-                        <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-                            {skills.map((skill, index) => (
-                                <motion.li
-                                    className="borderBlack rounded-xl bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
-                                    key={index}
-                                    variants={fadeInAnimationVariants}
-                                    initial="initial"
-                                    whileInView="animate"
-                                    viewport={{
-                                        once: true,
-                                    }}
-                                    custom={index + categoryIndex * 10}
-                                >
-                                    {skill}
-                                </motion.li>
-                            ))}
-                        </ul>
-                    </div>
-                ),
-            )}
+            {skillsData.map((skillCategory, skillCategoryIdx) => (
+                <div key={skillCategory.id} className="mb-8">
+                    <h3 className="mb-3 text-xl font-medium text-gray-800 dark:text-white/80">
+                        {skillCategory.title}
+                    </h3>
+                    <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+                        {skillCategory.skills.map((skill, skillIdx) => (
+                            <motion.li
+                                className="borderBlack rounded-xl bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
+                                key={skill.id}
+                                variants={fadeInAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                viewport={{
+                                    once: true,
+                                }}
+                                custom={skillIdx + skillCategoryIdx * 5}
+                            >
+                                {skill.name}
+                            </motion.li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
         </section>
     );
 }

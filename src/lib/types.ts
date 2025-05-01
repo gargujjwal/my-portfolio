@@ -7,6 +7,7 @@ export type APIResponse<Data> =
     | { status: "error"; data: {}; message: string };
 
 export type ExperienceData = {
+    id: number;
     title: string;
     location: string;
     description: string;

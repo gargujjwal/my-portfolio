@@ -53,7 +53,7 @@ export default function Project({
                     <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
                         {description}
                     </p>
-                    <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
+                    <ul className="mt-4 flex flex-wrap gap-2 sm:mt-6">
                         {tags.map((tag, index) => (
                             <li
                                 className="rounded-full bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white dark:text-white/70"
